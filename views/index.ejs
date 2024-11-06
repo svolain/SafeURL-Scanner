@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>URL Safety Scanner</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <h1>URL Safety Scanner</h1>
+  <form action="/scan-url" method="POST">
+    <input type="url" name="url" placeholder="Enter Url">
+    <button type="submit">Scan URL</button>
+  </form>
+
+  <% if (result) { %>
+    <div id="result" >
+      <% if (result.error) { %>
+        <p id="error"><%= result.error %></p>
+      <% } else { %>
+        <h2>URL Analysis Results:</h2>
+        <h3 class="<%= result.malicious > 0 ? 'status-danger' : (result.suspicious > 0 ? 
+        'status-warning' : 'status-safe') %>">
+          Status: <%= statusMessage %>
+        </h3>
+        <ul>
+          <p><strong>Harmless:</strong> <%= result.harmless %> engines found it harmless.</p>
+          <p><strong>Malicious:</strong> <%= result.malicious %> engines marked it as malicious.</p>
+          <p><strong>Suspicious:</strong> <%= result.suspicious %> engines flagged it as suspicious.</p>
+          <p><strong>Undetected:</strong> <%= result.undetected %> engines did not detect any threat.</p>
+        </ul>
+      <% } %>
+    </div>
+    </div>
+  <% }%>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.status-safe {
+    color: green;
+  }
+  
+  .status-warning {
+    color: orange;
+  }
+  
+  .status-danger {
+    color: red;
+  }
