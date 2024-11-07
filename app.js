@@ -1,11 +1,12 @@
 import express from "express";
 import axios from "axios";
 import base64url from 'base64url';
+import path from 'path';
 
 const app = express();
-const port = 3000;
+const port = 3002;
 
-app.use(express.static("public"));
+app.use(express.static(path.join(process.cwd(), 'public')));
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 
