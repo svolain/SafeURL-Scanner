@@ -4,7 +4,7 @@ import base64url from 'base64url';
 import path from 'path';
 
 const app = express();
-const port = 3002;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(process.cwd(), 'public')));
 app.set('view engine', 'ejs');
