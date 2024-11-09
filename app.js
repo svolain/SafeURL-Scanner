@@ -22,7 +22,7 @@ app.post("/", async (req, res) => {
         const response = await axios.get(`https://www.virustotal.com/api/v3/urls/${encodedUrl}`,
         {
             headers: {
-                'x-apikey': apikey
+                'x-apikey': process.env.SCAN_KEY
             }
         });
 
