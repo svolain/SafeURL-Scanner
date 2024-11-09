@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     res.render("index", { result:null });
 });
 
-app.post("/scan-url", async (req, res) => {
+app.post("/", async (req, res) => {
     const { url } = req.body;
 
     try {
