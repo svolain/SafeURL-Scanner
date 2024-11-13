@@ -6,10 +6,8 @@ Just enter a URL to the provided form, and the
 app will return a detailed analysis of whether the link is safe or 
 potentially harmful, helping you avoid malicious or suspicious content.
 
-TThe app is hosted on Render.com, with CI/CD pipelines set up for automatic 
+The app is hosted on Render.com, with CI/CD pipelines and automated tests set up for 
  deployment, ensuring the app is continuously updated with the latest changes. 
- Additionally, automated tests are run on every push to ensure the application 
- works as expected before deployment.
 
 ## Accessing the App
 
