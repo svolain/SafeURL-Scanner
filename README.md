@@ -32,4 +32,4 @@ You can access the app here: [URL Safety Scanner](https://url-safety-scanner.onr
 - **Axios**: A promise-based HTTP client for making requests to the VirusTotal API, enabling URL safety scans and analysis.
 - **Render.com**: The app is hosted on Render, a cloud platform that offers automatic deployment and scaling.
 
-- **Render.com**: A JavaScript testing framework used to automate the testing of the app, ensuring the application functions as expected before deployment.
+- **Jest**: A JavaScript testing framework used to automate the testing of the app, ensuring the application functions as expected before deployment.
