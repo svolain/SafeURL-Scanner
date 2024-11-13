@@ -1,8 +1,8 @@
 const request = require('supertest');
-const { app } = require('../app');  // Import your app using require
+const { app } = require('../app');
 const axios = require('axios');
 
-jest.mock('axios'); // Mock axios globally
+jest.mock('axios');
 
 describe("API and View Tests", () => {
   let server;
