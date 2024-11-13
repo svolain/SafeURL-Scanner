@@ -6,8 +6,10 @@ Just enter a URL to the provided form, and the
 app will return a detailed analysis of whether the link is safe or 
 potentially harmful, helping you avoid malicious or suspicious content.
 
-The app is hosted on Render.com, with CI/CD pipelines set up for automatic 
-deployment, ensuring the app is continuously updated with the latest changes.
+TThe app is hosted on Render.com, with CI/CD pipelines set up for automatic 
+ deployment, ensuring the app is continuously updated with the latest changes. 
+ Additionally, automated tests are run on every push to ensure the application 
+ works as expected before deployment.
 
 ## Accessing the App
 
@@ -31,3 +33,5 @@ You can access the app here: [URL Safety Scanner](https://url-safety-scanner.onr
 - **EJS (Embedded JavaScript)**: Used for rendering dynamic views and templates on the frontend, allowing seamless integration of data from the backend.
 - **Axios**: A promise-based HTTP client for making requests to the VirusTotal API, enabling URL safety scans and analysis.
 - **Render.com**: The app is hosted on Render, a cloud platform that offers automatic deployment and scaling.
+
+- **Render.com**: A JavaScript testing framework used to automate the testing of the app, ensuring the application functions as expected before deployment.
