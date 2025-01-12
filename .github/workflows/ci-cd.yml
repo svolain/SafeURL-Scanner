@@ -1,6 +1,6 @@
 name: CI and CD for safebrowse
 
-# Trigger the workflow on push and pull request to the main branch
+# on for starting the workflow on push and pull requet in main branch
 on:
   push:
     branches:
@@ -9,8 +9,8 @@ on:
     branches:
       - main
 
+# after triggering workflow first job is to run the tester
 jobs:
-  # Job to run tests
   test:
     runs-on: ubuntu-latest
     
@@ -27,12 +27,13 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test  # Runs Jest tests
+        run: npm test 
 
-  # Job to deploy to Render if tests pass
+  # if tests are succesfull the next job is to deploy the 
+  # changes to render.com through API request made with curl
   deploy:
     runs-on: ubuntu-latest
-    needs: test  # will run only if the 'test' job succeeds
+    needs: test
 
     steps:
       - name: Checkout code
